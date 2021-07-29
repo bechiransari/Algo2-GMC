@@ -1,0 +1,31 @@
+ALGORITHM find distinct elements
+VAR
+    HASH_TABLE<number,INTEGER>;
+    count: INTEGER;
+    somme: INTEGER;
+    set1 : ARRAY_OF INTEGER[n];
+    set2 : ARRAY_OF INTEGER[n];
+
+BEGIN
+    read(set1);
+    FOR i FROM 0 TO set[i] STEP 1  DO
+        IF (htab.lookup(set1[i]=true)) THEN
+            count := htab.get(set1[i]);
+            htab.insert(set1[i],count);
+            ELSE
+           htab.insert(set1[i],1);
+        END_IF
+    END_FOR
+    FOR j FROM 0 TO set2[j] STEP 1  DO
+        IF (htab.lookup(set2[j]=true)) THEN
+            count:= htab.get(set2[j]);
+            htab.insert(set2[j],count);
+            ELSE
+           htab.insert(set2[j],1);
+        END_IF
+    END_FOR
+    IF (htab.gets(set2[j]=1)) THEN
+        somme=somme+set2[j]
+    END_IF
+write(somme);
+END
